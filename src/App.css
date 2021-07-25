@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+.app {
+  background-image: url("./IMG_1629.jpg");
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+  opacity: 0.75;
+  width: 70vw;
+  background-color: whitesmoke;
+  border-radius: 3%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  padding-bottom: 20px;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-heading {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.app-heading h1 {
+
+  font-size: 2rem;
+  text-emphasis: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app-content {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.app-content__head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+
+  text-align: center;
 }
